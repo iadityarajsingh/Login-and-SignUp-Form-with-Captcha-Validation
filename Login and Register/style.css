@@ -1,0 +1,94 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    margin: 0; /* Remove default margin */
+    padding-top: 20px; /* Space from the top */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+    width: 100%; /* Full width for proper centering */
+  }
+  
+  .form-outline input {
+    border-radius: 25px;
+    padding: 15px;
+    transition: border-color 0.3s;
+    border: 1px solid #ccc;
+  }
+  
+  .form-outline input:focus {
+    border-color: #ffdd57;
+    box-shadow: 0 0 5px rgba(255, 221, 87, 0.5);
+    outline: none;
+  }
+  
+  .btn {
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: bold;
+  }
+  
+  .btn-warning {
+    background-color: #ffdd57;
+    border: none;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ffc107;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .social-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%; /* Ensure the divider takes full width */
+  }
+  
+  .divider:before,
+  .divider:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+  
+  .divider:not(:empty)::before {
+    margin-right: 10px;
+  }
+  
+  .divider:not(:empty)::after {
+    margin-left: 10px;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limit image height */
+  }
+  
